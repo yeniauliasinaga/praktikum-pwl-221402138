@@ -71,7 +71,7 @@
                     <span>Data Pesanan</span></a>
             </li>
             <!-- Nav Item - Rekomendasi Produk -->
-            <li class="nav-item">
+            <li class="nav-item  {{ request()->is('admin/sepatu' , 'admin/sendal', 'admin/pakaian', 'admin/aksesoris') ? 'active' : '' }}">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-folder"></i>
@@ -95,7 +95,7 @@
                     <span>Grafik Penjualan</span></a>
             </li>
             <!-- Nav Item - Tanggapan -->
-            <li class="nav-item">
+            <li class="nav-item  {{ request()->is('admin/tanggapan' , 'admin/grafikTanggapan') ? 'active' : '' }}">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTanggapan"
                     aria-expanded="true" aria-controls="collapseTanggapan">
                     <i class="fas fa-folder"></i>
